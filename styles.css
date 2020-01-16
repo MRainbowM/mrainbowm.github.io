@@ -9,8 +9,6 @@ body {
     flex-direction: column;
     margin: 10px auto;
     padding: 10px;
-    border: 1px solid #dfe2e8;
-    border-radius: 4px;
 }
 
 h1 {
