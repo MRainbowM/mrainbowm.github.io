@@ -7,14 +7,13 @@ body {
     max-width: 1000px;
     height: 100%;
     flex-direction: column;
-    margin: 10px auto;
-    padding: 10px;
+    margin: 0 auto;
+    padding: 20px;
 }
 
 h1 {
     width: 100%;
     text-align: center;
-    padding: 10px 0;
     font-weight: bold;
     font-size: 1.2em;
     color: #424457;
@@ -26,8 +25,8 @@ h1 {
     width: 100%;
     border: 1px solid #dfe2e8;
     border-radius: 4px;
-    padding: 10px;
-    margin-top: 10px;
+    padding: 20px;
+    margin-top: 20px;
 }
 
 
