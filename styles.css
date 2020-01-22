@@ -33,7 +33,7 @@ h1 {
 .col-img {
     height: 275px;
     width: 275px;
-    margin-right: 10px;
+    margin-right: 20px;
 }
 
 .avatar {
@@ -87,9 +87,12 @@ a:hover {
     margin-bottom: 20px;
 }
 
-@media (max-width: 690px) {
+@media (max-width: 710px) {
     .col-img {
         margin: 0 auto 20px auto;
+    }
+    .col-text {
+        width: 100%;
     }
 }
 
