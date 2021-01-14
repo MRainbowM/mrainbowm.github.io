@@ -65,6 +65,22 @@ span, li, h2, p, a {
     color: #424457;
 }
 
+h3 {
+    width: 100%;
+    font-size: 0.7em;
+    color: #424457;
+    font-weight: bold;
+    margin-top: 5px;
+}
+
+h4 {
+    width: 100%;
+    font-size: 0.7em;
+    color: #424457;
+    margin: 5px 5px;
+    font-style: italic;
+}
+
 a {
     text-decoration: underline;
 }
