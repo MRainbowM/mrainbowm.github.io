@@ -65,12 +65,17 @@ span, li, h2, p, a {
     color: #424457;
 }
 
+h2 {
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
 h3 {
     width: 100%;
     font-size: 0.7em;
     color: #424457;
     font-weight: bold;
-    margin-top: 20px;
+    margin-top: 30px;
     margin-bottom: 10px;
 }
 
@@ -86,9 +91,7 @@ a {
     text-decoration: underline;
 }
 
-h2 {
-    font-weight: bold;
-}
+
 
 li {
     margin-left: 20px;
@@ -100,8 +103,9 @@ a:hover {
 }
 
 .col-ul {
-    margin-right: 20px;
-    margin-bottom: 20px;
+    margin-right: 30px;
+    margin-bottom: 30px;
+    width: 250px;
 }
 
 @media (max-width: 740px) {
