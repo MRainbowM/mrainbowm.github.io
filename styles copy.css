@@ -1,0 +1,154 @@
+body {
+    background-color: #fff;
+}
+
+.page {
+    width: 100%;
+    max-width: 1000px;
+    height: 100%;
+    flex-direction: column;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+h1 {
+    width: 100%;
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.2em;
+    color: #424457;
+}
+
+.block {
+    display: flex;
+    flex-wrap: wrap;
+    /* justify-content: flex-start; */
+    width: 100%;
+    border: 1px solid #dfe2e8;
+    border-radius: 4px;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+.col-img {
+    height: 310px;
+    width: 310px;
+    margin-right: 20px;
+}
+
+.avatar {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 4px;
+}
+
+.col-text {
+    height: 100%;
+}
+
+.col-text > .row {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-bottom: 5px;
+}
+
+.col-text > .row:last-child {
+    margin-bottom: 0;
+}
+
+
+span, li, h2, p, a {
+    width: 100%;
+    font-size: 0.9em;
+    color: #424457;
+}
+
+h2 {
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+h3 {
+    width: 100%;
+    margin-bottom: 10px;
+    font-size: 0.9em;
+    font-weight: bold;
+}
+
+
+h4 {
+    width: 100%;
+    font-size: 0.7em;
+    color: #424457;
+    margin: 5px 5px;
+    font-style: italic;
+}
+
+a {
+    text-decoration: underline;
+}
+
+li {
+    margin-left: 20px;
+    list-style-type: disc;
+    list-style-type: none; /* удаление маркеров у списка */
+}
+
+li:before {
+    content: "- "; /* новый маркер */
+}
+
+a:hover {
+    color: #6C64B0;
+}
+
+.period {
+    width: 100%;
+    font-size: 0.7em;
+    color: #424457;
+    font-weight: bold;
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+
+.col-ul {
+    margin-right: 30px;
+    margin-bottom: 30px;
+    width: 250px;
+}
+
+.job {
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+.company {
+
+}
+
+.company a {
+    text-decoration: none;
+    font-weight: 700;
+}
+
+.position {
+    font-weight: 700;
+}
+
+.stack {
+    width: 100%;
+    margin-top: 10px;
+}
+
+@media (max-width: 740px) {
+    .col-img {
+        margin: 0 auto 20px auto;
+    }
+    .col-text {
+        width: 100%;
+    }
+}
+
+
