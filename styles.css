@@ -19,6 +19,10 @@ a:hover {
     color: white;
 }
 
+li::marker {
+    content: '- ';
+}
+
 .page {
     max-width: 1000px;
     width: 100%;
@@ -60,13 +64,13 @@ a:hover {
     background-color: #dadadc;
     width: 100%;
     border-radius: 0 0 40px 40px;
-    padding: 25px 40px 0;
+    padding: 30px 40px 0;
     color: #474a50;
 }
 
 .content_row {
     width: 100%;
-    padding-bottom: 15px;
+    padding-bottom: 30px;
 }
 
 .content_block {
@@ -103,14 +107,13 @@ a:hover {
     flex-wrap: wrap;
 }
 
-.skill {
+.skills > span {
     border: 1px solid #474a50;
     border-radius: 20px;
     padding: 6px 20px;
     min-width: 50px;
     font-weight: bold;
 }
-
 
 .about {
     display: flex;
@@ -173,8 +176,4 @@ a:hover {
 
 .job_description>ul {
     padding-left: 9px;
-}
-
-.job_description>ul>li::marker {
-    content: '- ';
 }
