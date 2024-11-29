@@ -96,7 +96,11 @@ a:hover {
 }
 
 .skills {
-    margin-top: 10px;
+    gap: 10px 10px;
+    display: flex;
+    text-wrap: nowrap;
+    width: 100%;
+    flex-wrap: wrap;
 }
 
 .skill {
