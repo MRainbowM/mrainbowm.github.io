@@ -130,7 +130,7 @@ li::marker {
 .about {
     display: flex;
     flex-direction: column;
-    gap: 7px;
+    gap: 8px;
 }
 
 .job_block {
@@ -190,8 +190,8 @@ li::marker {
 .job_description {
     display: flex;
     flex-direction: column;
-    gap: 7px;
-    padding-bottom: 30px;
+    gap: 8px;
+    padding-bottom: 32px;
 }
 
 .job_description>ul {
