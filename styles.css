@@ -227,8 +227,10 @@ li::marker {
     }
 
     .avatar_border {
-        height: calc(100% - 20px);
-        width: unset;
+        /* height: calc(100% - 20px);
+        width: unset; */
+        width: 157px;
+        height: 157px;
     }
 }
 
@@ -255,6 +257,11 @@ li::marker {
 
     h1 {
         font-size: 40px;
+    }
+
+    .avatar_border {
+        width: 125px;
+        height: 125px;
     }
 
 }
