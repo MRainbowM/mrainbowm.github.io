@@ -95,6 +95,19 @@ a:hover {
     margin-right: 15px;
 }
 
+.skills {
+    margin-top: 10px;
+}
+
+.skill {
+    border: 1px solid #474a50;
+    border-radius: 20px;
+    padding: 6px 20px;
+    min-width: 50px;
+    font-weight: bold;
+}
+
+
 .about {
     display: flex;
     flex-direction: column;
@@ -160,8 +173,4 @@ a:hover {
 
 .job_description>ul>li::marker {
     content: '- ';
-}
-
-.stack {
-    font-weight: bold;
 }
