@@ -244,7 +244,6 @@ li::marker {
 
     .job_block {
         grid-template-columns: 1fr;
-        width: 100%;
     }
 }
 
