@@ -116,6 +116,7 @@ li::marker {
     text-wrap: nowrap;
     width: 100%;
     flex-wrap: wrap;
+    margin-top: 5px;
 }
 
 .skills>span {
