@@ -2,6 +2,23 @@ body {
     background-color: #fff;
 }
 
+h1 {
+    font-size: 56px;
+    width: 30%;
+    line-height: 1;
+}
+
+h2 {
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-bottom: 10px;
+    font-size: 20px;
+}
+
+a:hover {
+    color: white;
+}
+
 .page {
     max-width: 1000px;
     width: 100%;
@@ -16,12 +33,6 @@ body {
     border-radius: 40px 40px 0 0;
     position: relative;
     padding: 40px;
-}
-
-h1 {
-    font-size: 56px;
-    width: 30%;
-    line-height: 1;
 }
 
 .avatar {
@@ -49,24 +60,16 @@ h1 {
     background-color: #dadadc;
     width: 100%;
     border-radius: 0 0 40px 40px;
-    padding: 25px 40px;
+    padding: 25px 40px 0;
     color: #474a50;
 }
 
 .content_row {
     width: 100%;
-    margin-bottom: 15px;
-}
-
-h2 {
-    text-transform: uppercase;
-    font-weight: bold;
-    margin-bottom: 10px;
-    font-size: 20px;
+    padding-bottom: 15px;
 }
 
 .content_block {
-    margin-bottom: 20px;
     display: flex;
     flex-direction: column;
     font-size: 16px;
@@ -77,7 +80,6 @@ h2 {
     grid-template-columns: 35% 1fr;
     gap: 5px 15px;
 }
-
 
 .contacts_row {
     display: flex;
@@ -93,10 +95,6 @@ h2 {
     margin-right: 15px;
 }
 
-.contacts_row>a:hover {
-    color: white;
-}
-
 .about {
     display: flex;
     flex-direction: column;
@@ -106,8 +104,64 @@ h2 {
 .job {
     display: flex;
     flex-direction: column;
+
+    position: relative;
+    padding-left: 20px;
+}
+
+.job_line {
+    position: absolute;
+    height: 100%;
+    width: 1px;
+    left: 5px;
+    background-color: #474a50;
+}
+
+.job_line:before {
+    content: "";
+    position: absolute;
+    top: 13px;
+    left: -10px;
+    transform: translate(50%, -50%);
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: #474a50;
+    mix-blend-mode: darken;
+}
+
+.first.job_line {
+    margin-top: 10px;
+}
+
+.first.job_line:before {
+    top: 3px;
+}
+
+.last.job_line {
+    height: calc(100% - 30px);
+}
+
+.job_title {
+    font-weight: bold;
+    font-size: 18px;
 }
 
 .job_description {
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+    padding-bottom: 30px;
+}
 
+.job_description>ul {
+    padding-left: 9px;
+}
+
+.job_description>ul>li::marker {
+    content: '- ';
+}
+
+.stack {
+    font-weight: bold;
 }
