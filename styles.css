@@ -1,5 +1,13 @@
+:root {
+    --color-accent: #2c5881;
+    --color-base: #2b58800f; 
+    --color-text-on-accent: white;
+    --color-text-on-base: #474a50c9;
+    --color-text-accent: #474a50;
+}
+
 body {
-    background-color: #fff;
+    background-color: white;
     font-size: 16px;
 }
 
@@ -18,10 +26,23 @@ h3 {
     font-weight: bold;
     margin-bottom: 10px;
     font-size: 20px;
+    color: var(--color-text-accent);
 }
 
+a {
+    border-bottom: 1px dashed var(--color-text-on-base);
+    max-width: fit-content;
+    line-height: 1.2;
+}
+
+
 a:hover {
-    color: white;
+    color: var(--color-accent);
+    border-bottom: 1px solid var(--color-accent);
+}
+
+li {
+    padding-bottom: 5px;
 }
 
 li::marker {
@@ -36,9 +57,8 @@ li::marker {
 }
 
 .top_block {
-    background-color: #474a50;
-    color: white;
-    border-radius: 40px 40px 0 0;
+    background-color: var(--color-accent);
+    color: var(--color-text-on-accent);
     position: relative;
     padding: 40px;
 }
@@ -65,11 +85,10 @@ li::marker {
 }
 
 .content {
-    background-color: #dadadc;
+    background-color: var(--color-base);
     width: 100%;
-    border-radius: 0 0 40px 40px;
     padding: 30px 40px 0;
-    color: #474a50;
+    color: var(--color-text-on-base);
 }
 
 .content_row {
@@ -81,8 +100,6 @@ li::marker {
     display: flex;
     flex-direction: column;
 }
-
-
 
 .two_col {
     display: grid;
@@ -101,13 +118,14 @@ li::marker {
     align-items: center;
     text-wrap: nowrap;
     font-size: 16px;
-    margin-bottom: 5px;
+    margin-bottom: 10px;
 }
 
-.contacts_row>img {
+.contacts_row>svg {
     height: 14px;
     width: 14px;
     margin-right: 15px;
+    color: var(--color-accent);
 }
 
 .skills {
@@ -117,13 +135,16 @@ li::marker {
     width: 100%;
     flex-wrap: wrap;
     margin-top: 5px;
+  
 }
 
 .skills>span {
-    border: 1px solid #474a50;
     border-radius: 20px;
-    padding: 6px 15px;
-    font-weight: bold;
+    padding: 3px 10px;
+    font-weight: 400;
+    color: var(--color-text-on-accent);
+    background-color: var(--color-accent);
+    opacity: 0.85;
 }
 
 .about {
@@ -152,7 +173,7 @@ li::marker {
     height: 100%;
     width: 1px;
     left: 5px;
-    background-color: #474a50;
+    background-color: var(--color-accent);
 }
 
 .job_line:before {
@@ -164,7 +185,7 @@ li::marker {
     width: 10px;
     height: 10px;
     border-radius: 50%;
-    background: #474a50;
+    background: var(--color-accent);
     mix-blend-mode: darken;
 }
 
@@ -183,13 +204,14 @@ li::marker {
 .job_title {
     font-weight: bold;
     font-size: 18px;
+    color: var(--color-text-accent);
 }
 
 .job_description {
     display: flex;
     flex-direction: column;
     gap: 8px;
-    padding-bottom: 32px;
+    padding-bottom: 40px;
 }
 
 .job_description>ul {
@@ -199,14 +221,6 @@ li::marker {
 @media (max-width: 1000px) {
     .page {
         margin: unset;
-    }
-
-    .top_block {
-        border-radius: unset;
-    }
-
-    .content {
-        border-radius: unset;
     }
 }
 
